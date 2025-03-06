@@ -43,5 +43,11 @@ namespace LibraryApp
             textBox2.Text = "";
             textBox1.Focus();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+        }
     }
 }

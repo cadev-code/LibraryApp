@@ -41,6 +41,7 @@
             tableLayoutPanel5 = new TableLayoutPanel();
             button1 = new Button();
             label5 = new Label();
+            label6 = new Label();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -71,13 +72,15 @@
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel4, 0, 1);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel5, 0, 2);
-            tableLayoutPanel2.Location = new Point(115, 187);
+            tableLayoutPanel2.Controls.Add(label6, 0, 3);
+            tableLayoutPanel2.Location = new Point(115, 168);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 3;
+            tableLayoutPanel2.RowCount = 4;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.Size = new Size(508, 174);
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel2.Size = new Size(508, 212);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -87,7 +90,7 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel3.Controls.Add(label1, 0, 0);
             tableLayoutPanel3.Controls.Add(label2, 0, 1);
-            tableLayoutPanel3.Location = new Point(154, 5);
+            tableLayoutPanel3.Location = new Point(154, 9);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -128,7 +131,7 @@
             tableLayoutPanel4.Controls.Add(label4, 0, 1);
             tableLayoutPanel4.Controls.Add(textBox1, 1, 0);
             tableLayoutPanel4.Controls.Add(textBox2, 1, 1);
-            tableLayoutPanel4.Location = new Point(109, 73);
+            tableLayoutPanel4.Location = new Point(109, 84);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 2;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -185,7 +188,7 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.73494F));
             tableLayoutPanel5.Controls.Add(button1, 1, 0);
             tableLayoutPanel5.Controls.Add(label5, 0, 0);
-            tableLayoutPanel5.Location = new Point(155, 141);
+            tableLayoutPanel5.Location = new Point(155, 156);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -213,7 +216,7 @@
             label5.AutoSize = true;
             label5.Cursor = Cursors.Hand;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.RoyalBlue;
+            label5.ForeColor = Color.DarkSlateGray;
             label5.Location = new Point(6, 6);
             label5.Name = "label5";
             label5.Size = new Size(118, 17);
@@ -221,18 +224,32 @@
             label5.Text = "Limpiar Formulario";
             label5.Click += label5_Click;
             // 
-            // Form1
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.None;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.MenuHighlight;
+            label6.Location = new Point(199, 192);
+            label6.Name = "label6";
+            label6.Size = new Size(110, 17);
+            label6.TabIndex = 3;
+            label6.Text = "Registrar Usuario";
+            label6.Click += label6_Click;
+            // 
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(739, 548);
             Controls.Add(tableLayoutPanel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Login";
+            Text = "Login";
             Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
+            tableLayoutPanel2.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
             tableLayoutPanel4.ResumeLayout(false);
@@ -257,5 +274,6 @@
         private TableLayoutPanel tableLayoutPanel5;
         private Button button1;
         private Label label5;
+        private Label label6;
     }
 }
