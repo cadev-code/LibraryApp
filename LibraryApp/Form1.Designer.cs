@@ -219,6 +219,7 @@
             label5.Size = new Size(118, 17);
             label5.TabIndex = 1;
             label5.Text = "Limpiar Formulario";
+            label5.Click += label5_Click;
             // 
             // Form1
             // 

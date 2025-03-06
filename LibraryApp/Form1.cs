@@ -36,5 +36,12 @@ namespace LibraryApp
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox1.Focus();
+        }
     }
 }
