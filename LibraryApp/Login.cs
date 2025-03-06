@@ -46,8 +46,14 @@ namespace LibraryApp
 
         private void label6_Click(object sender, EventArgs e)
         {
-            Register register = new Register();
+            Register register = new Register(this);
             register.Show();
+            this.Hide();
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

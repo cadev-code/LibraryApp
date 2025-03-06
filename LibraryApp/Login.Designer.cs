@@ -82,6 +82,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Size = new Size(508, 204);
             tableLayoutPanel2.TabIndex = 0;
+            tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // tableLayoutPanel3
             // 

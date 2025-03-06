@@ -84,6 +84,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.Size = new Size(355, 246);
             tableLayoutPanel2.TabIndex = 0;
+            tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // tableLayoutPanel3
             // 
@@ -247,6 +248,7 @@
             label7.Size = new Size(153, 17);
             label7.TabIndex = 3;
             label7.Text = "Volver al Inicio de Sesion";
+            label7.Click += label7_Click;
             // 
             // Register
             // 
@@ -257,6 +259,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Register";
             Text = "Register";
+            FormClosed += Register_FormClosed;
             Load += Register_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
