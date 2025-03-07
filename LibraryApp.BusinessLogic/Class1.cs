@@ -1,6 +1,6 @@
 ﻿namespace LibraryApp.BusinessLogic
 {
-    public class class1
+    public class Class1
     {
 
     }
